@@ -1,34 +1,111 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="css/main-style.css">
-        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css' integrity='sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==' crossorigin='anonymous'/>
-    </head>
-    <body>
-        <ul class="nav">
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#news">關於</a></li>
-        </ul>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MelodyMatch - 歡迎來到音樂世界</title>
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">MelodyMatch</a>
+            <ul class="nav-links">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">關於我們</a></li>
+                <li><a href="#">服務</a></li>
+                <li><a href="#">聯繫我們</a></li>
+                <li><a href="login.html" class="login-btn">登入</a></li>
+            </ul>
+        </div>
+    </nav>
 
-        <main>
-            <div class="song">
-                    <div id="card">
-                        <h1>だから僕は音楽を辞めた</h1>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5j7ixaLeGTGSv4DzKs0pCM?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <button><a href="song/song1.html">查看歌詞</a></button>
-                    </div>
-                    <div id="card">
-                        <h1>暗く黒く</h1>
-                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3IzKR3VsEZ7aWXhGAapMyO?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                    </div>
-            </div>
-        </main>
+    <div class="enter">
+        <div class="slogan">
+            <h1>歌詞之美，盡在這裡。</h1>
+            <p>透過檢視歌詞，了解歌曲背後的意義。</p>
+            <a href="#features" class="start-btn">開始探索</a>
+        </div>
+    </div>
 
-        <footer>
-            <div class="social-media-link">
-                <i class="fa-brands fa-github"></i>
+    <div class="container">
+        <section id="features" class="features">
+            <h2>我們的特色</h2>
+            <div class="row">
+                <div class="feature">
+                    <i class="fas fa-search"></i>
+                    <h3>精準檢索</h3>
+                    <p>快速找到你喜歡的歌詞和音樂</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-heart"></i>
+                    <h3>個性化推薦</h3>
+                    <p>根據你的偏好提供專屬推薦</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-comments"></i>
+                    <h3>社群互動</h3>
+                    <p>與其他音樂愛好者分享你的感受和想法</p>
+                </div>
             </div>
-        </footer>
-    </body>
+        </section>
+
+        <section class="latest">
+            <h2>最新歌詞和專輯</h2>
+            <div class="styled-table">
+                <div class="row header">
+                    <div class="cell">歌曲</div>
+                    <div class="cell">專輯</div>
+                    <div class="cell">歌手</div>
+                </div>
+                <div class="row">
+                    <a href="song/song1.html">
+                        <div class="cell">晴天</div>
+                        <div class="cell">范特西</div>
+                        <div class="cell">周杰倫</div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="song/song2.html">
+                        <div class="cell">不為誰而作的歌</div>
+                        <div class="cell">不為誰而作的歌</div>
+                        <div class="cell">林俊傑</div>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="song/song3.html">
+                        <div class="cell">突然好想你</div>
+                        <div class="cell">後青春期的詩</div>
+                        <div class="cell">五月天</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html" class="logo">MelodyMatch</a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">聯繫我們</a></li>
+                        <li><a href="#">常見問題</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
 </html>
