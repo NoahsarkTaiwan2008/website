@@ -8,57 +8,6 @@ $color-primary-white: rgb(240, 240, 240);
     font-weight: 400;
     font-style: normal;
 }
-.navbar {
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #333; /* 背景顏色 */
-    color: #fff; /* 文字顏色 */
-}
-
-.nav-logo {
-    font-size: 1.5em;
-    text-decoration: none;
-    color: #fff; /* logo 文字顏色 */
-}
-
-.nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.nav-links li {
-    margin-right: 20px;
-}
-
-.nav-links li:last-child {
-    margin-right: 0;
-}
-
-.nav-links li a {
-    position: relative;
-    text-decoration: none;
-    color: #fff; /* 連結文字顏色 */
-}
-
-.nav-links li a::after {
-    content: '';
-    position: absolute;
-    bottom: -5px; /* 距離連結底部的距離 */
-    left: 0;
-    width: 0%;
-    height: 2px; /* 線的寬度 */
-    background-color: #ffd700; /* 線的顏色 */
-    transition: width 0.3s ease; /* 寬度過渡效果 */
-}
-
-.nav-links li a:hover::after {
-    width: 100%;
-}
 
 .welcome {
     margin-top: 10%;
