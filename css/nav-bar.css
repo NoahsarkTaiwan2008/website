@@ -44,12 +44,12 @@
 .nav-links li a::after {
     content: '';
     position: absolute;
-    bottom: -5px; /* 距離連結底部的距離 */
+    bottom: -5px;
     left: 0;
     width: 0%;
-    height: 2px; /* 線的寬度 */
-    background-color: #ffd700; /* 線的顏色 */
-    transition: width 0.3s ease; /* 寬度過渡效果 */
+    height: 2px;
+    background-color: #cfcfcf;
+    transition: width 0.3s ease;
 }
 
 .nav-links li a:hover::after {

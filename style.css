@@ -105,11 +105,11 @@ body {
     }
 
     &:hover a {
-      color: black;
-      background-color: aliceblue;
+      color: aliceblue;
       padding: 3px;
       border-radius: 10px;
       font-weight: bold;
+      text-decoration: underline;
     }
     
     &:hover img {
@@ -118,8 +118,7 @@ body {
       filter: brightness(0.5);
       opacity: 1;
     }
-  
-  }
+}
   
 .material-symbols-outlined {
     vertical-align: middle;
@@ -129,3 +128,4 @@ body {
     display: flex;
     justify-content: space-evenly;
 }
+
