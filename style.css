@@ -59,6 +59,7 @@ body {
       left: 0;
       opacity: 0.9;
       transition: opacity .2s ease-out;
+      filter: brightness(0.8);
     }
   
     h2 {
@@ -69,6 +70,8 @@ body {
       font-family: 'Roboto Condensed', sans-serif;
       font-weight: normal;
       text-transform: uppercase;
+      color: white;
+      font-weight: bold;
     }
     
     p, a {
@@ -99,6 +102,14 @@ body {
       opacity: 1;
       transition: opacity .5s .1s ease-in;
       color: white;
+    }
+
+    &:hover a {
+      color: black;
+      background-color: aliceblue;
+      padding: 3px;
+      border-radius: 10px;
+      font-weight: bold;
     }
     
     &:hover img {
