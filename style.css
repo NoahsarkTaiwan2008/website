@@ -24,10 +24,11 @@ $color-primary-white: rgb(240, 240, 240);
 }
 
 body {
-    background-image: url("images/pexels-steve-1292241.jpg"); /* 替換成你的背景圖片路徑 */
-    background-repeat: no-repeat; /* 防止背景圖片重複 */
-    background-attachment: fixed; /* 將背景圖片固定 */
-    background-size: cover; /* 確保背景圖片完全填滿視窗 */
+    background-image: url("images/pexels-steve-1292241.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+    backdrop-filter: blur(3px);
 }
 
 .card-main {
@@ -100,6 +101,7 @@ body {
     
     &:hover img {
       transition: opacity .3s ease-in;
+      filter: blur(5px);
       opacity: 1;
     }
   
