@@ -10,6 +10,7 @@
     color: #fff;
     z-index: 1000;
     backdrop-filter: blur(10px); /* 添加模糊效果，可以調整模糊程度 */
+    font-family: "Poetsen One", sans-serif;
 }
 
 
