@@ -1,27 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
-
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styles */
 body {
     font-family: 'Poetsen One', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 0 auto;
     padding: 0 20px;
 }
 
+/* Navbar */
 .navbar {
-    background-color: #fff;
-    color: #333;
-    padding: 15px 0;
+    background-color: #333333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+    transition: background-color 0.3s ease;
+}
+
+.navbar:hover {
+    background-color: #444444;
 }
 
 .navbar .container {
@@ -31,172 +39,158 @@ body {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
     color: #ffffff;
     text-decoration: none;
 }
 
 .nav-links {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
 }
 
 .nav-links li {
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
-.nav-links a {
-    position: relative;
-    color: #333;
+.nav-links li a {
+    color: #ffffff;
     text-decoration: none;
-    font-size: 1em;
-    padding: 5px 10px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #333;
-    left: 0;
-    bottom: -2px;
-    transition: width 0.3s;
+.nav-links li a:hover {
+    color: #cccccc;
 }
 
-.nav-links a:hover::after {
-    width: 100%;
-}
-
-.nav-links a:hover {
-    color: #000;
-}
-
-.styled-table {
-    border-collapse: collapse;
-    width: 100%;
-    margin: 25px 0;
-    font-size: 1em;
-    font-family: 'Poetsen One', sans-serif;
-    min-width: 400px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #333;
-}
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #e0e0e0;
-}
-
-.row.header {
-    background-color: #f9f9f9;
-    font-weight: bold;
-}
-
-.cell {
-    padding: 12px 15px;
-    flex: 1;
-}
-
-.row a {
-    color: inherit;
-    text-decoration: none;
-    display: flex;
-    width: 100%;
-}
-
-.row a:hover {
-    background-color: #f1f1f1;
-    color: #333;
-}
-
-.slogan {
-    padding: 5%;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    text-align: center;
-    position: relative;
-}
-
-.slogan h1 {
-    font-size: 50px;
-}
-
-.slogan p {
-    font-size: 20px;
-    color: #727272;
-}
-
-.start-btn {
-    display: block;
-    background-color: #333;
-    color: #fff;
+.login-btn {
+    background-color: #007bff;
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin: 10px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Enter Section */
+.enter {
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    max-width: 200px;
-    margin-top: 20px;
-    position: relative;
-    z-index: 10; /* 確保按鈕在slogan區塊上方 */
+}
+
+.slogan {
+    color: #ffffff;
+}
+
+.start-btn {
+    background-color: #8f9092;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
 .start-btn:hover {
-    background-color: #555;
+    background-color: #191a1b;
 }
 
+/* Features Section */
 .features {
-    margin-top: 50px;
-    text-align: center;
+    padding: 50px 0;
 }
 
 .features h2 {
-    font-size: 30px;
+    text-align: center;
     margin-bottom: 30px;
 }
 
 .features .row {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .feature {
-    flex-basis: 30%;
-    margin-bottom: 30px;
     text-align: center;
+    flex: 1;
+    margin: 0 10px;
 }
 
 .feature i {
-    font-size: 36px;
-    margin-bottom: 10px;
+    font-size: 48px;
+    color: #8e8f90;
 }
 
+.feature h3 {
+    margin: 10px 0;
+}
+
+.feature p {
+    color: #666666;
+}
+
+/* Latest Section */
 .latest {
-    margin-top: 50px;
+    padding: 50px 0;
 }
 
 .latest h2 {
-    font-size: 30px;
+    text-align: center;
     margin-bottom: 30px;
 }
 
+.all {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card .container {
+    padding: 20px;
+}
+
+.card h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.card p {
+    color: #666666;
+}
+
+/* Footer Section */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 50px 0;
 }
 
 .footer .container {
@@ -205,8 +199,22 @@ body {
     align-items: center;
 }
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+}
+
+.footer-logo .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .footer-nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
 }
 
@@ -214,53 +222,28 @@ body {
     margin-right: 20px;
 }
 
-.footer-nav ul li:last-child {
-    margin-right: 0;
-}
-
 .footer-nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
 .footer-nav ul li a:hover {
-    color: #bbb;
+    color: #cccccc;
 }
 
-.social-links a {
-    color: #fff;
+.social-links {
+    margin-top: 20px;
+}
+
+.social-icon {
+    font-size: 24px;
+    color: #ffffff;
+    margin-right: 10px;
     text-decoration: none;
-    margin-left: 15px;
-    transition: color 0.3s;
+    transition: color 0.3s ease;
 }
 
-.social-links a:hover {
-    color: #bbb;
-}
-
-.all {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 200px;
-    border-radius: 5px;
-    margin: 10px;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-img {
-    border-radius: 5px 5px 0 0;
-}
-
-.container {
-    padding: 2px 16px;
+.social-icon:hover {
+    color: #dee0e2;
 }
