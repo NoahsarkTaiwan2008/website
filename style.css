@@ -129,3 +129,27 @@ body {
     justify-content: space-evenly;
 }
 
+.start-btn {
+  margin-top: 10px;
+  background-color: rgba(232, 232, 232, 0.205);
+  display: inline; 
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+  z-index: 1000;
+  text-align: center;
+}
+
+.start-btn:hover {
+  box-shadow: 0 0 0 1px black;
+}
+
+.separator {
+  height: 3px; /* 分隔線高度 */
+  background-color: #ccc; /* 分隔線顏色 */
+  margin: 20px auto; /* 分隔線的上下間距 */
+  width: 50%;
+  text-align: center;
+}
