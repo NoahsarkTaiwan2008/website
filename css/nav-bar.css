@@ -5,7 +5,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5); /* 更换为半透明的黑色背景 */
+    background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(10px);
     z-index: 1000;
     font-family: "Poetsen One", sans-serif;
