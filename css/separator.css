@@ -1,0 +1,7 @@
+.separator {
+    height: 3px;
+    background-color: #ccc;
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}

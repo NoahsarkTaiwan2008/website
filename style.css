@@ -132,26 +132,33 @@ body {
 }
 
 .start-btn {
-  margin-top: 10px;
-  background-color: rgba(232, 232, 232, 0.205);
-  display: inline; 
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0; 
   cursor: pointer;
-  border: none;
-  box-shadow: 0 0 0 transparent;
-  transition: box-shadow 0.3s ease;
-  z-index: 1000;
-  text-align: center;
 }
 
-.start-btn:hover {
-  box-shadow: 0 0 0 1px black;
+.start-btn a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #c1d2d39a; 
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px; 
+}
+
+.start-btn a:hover {
+  background-color: #565b609c;
+  color: #fff; 
+  text-decoration: none; 
+  transition: background-color 0.3s ease, color 0.5s ease; 
 }
 
 .separator {
-  height: 3px; /* 分隔線高度 */
-  background-color: #ccc; /* 分隔線顏色 */
-  margin: 20px auto; /* 分隔線的上下間距 */
+  height: 3px;
+  background-color: #ccc;
+  margin: 20px auto;
   width: 50%;
   text-align: center;
 }
