@@ -2,40 +2,42 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f8f8f88d;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
     border-radius: 15px;
     font-family: 'Roboto', sans-serif;
-    cursor: pointer;
-    max-width: 800px;
-    margin: 0 auto;
+    color: #ffffff; /* 白色文字 */
+    max-width: 1200px; /* 增加最大宽度 */
+    margin: 40px auto 0; /* 使页脚居中，并增加顶部间距 */
 }
 
 footer p {
-    
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    border: 0.5px black solid;
-    border-radius: 15px;
-    padding: 15px;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
 }
 
 footer ul {
     display: flex;
     list-style: none;
-    padding: 5px;
+    padding: 0;
     margin: 0;
-    border: 0.5px black solid;
-    border-radius: 15px;
 }
 
 footer ul li {
-    margin: 10px; 
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #ffffff; /* 白色图标 */
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #1DA1F2; /* 悬停时变为 Twitter 蓝色 */
 }
 
 footer ul li i {
-    font-size: 30px;
+    font-size: 24px;
     cursor: pointer;
-    
 }

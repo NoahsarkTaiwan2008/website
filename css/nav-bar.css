@@ -5,18 +5,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(124, 124, 124, 0.8); /* 使用rgba來添加半透明效果 */
-    border-radius: 10px;
-    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5); /* 更换为半透明的黑色背景 */
+    backdrop-filter: blur(10px);
     z-index: 1000;
-    backdrop-filter: blur(10px); /* 添加模糊效果，可以調整模糊程度 */
     font-family: "Poetsen One", sans-serif;
 }
 
 .nav-logo {
     font-size: 1.5em;
     text-decoration: none;
-    color: #fff; /* logo 文字顏色 */
+    color: #fff;
 }
 
 .nav-links {
@@ -37,17 +35,19 @@
 .nav-links li a {
     position: relative;
     text-decoration: none;
-    color: #fff; /* 連結文字顏色 */
+    color: #fff;
+    padding-bottom: 5px; /* 增加底部内边距，使链接更具可点击性 */
 }
 
 .nav-links li a::after {
     content: '';
     position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0%;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); /* 居中链接底部边线 */
+    width: 0;
     height: 2px;
-    background-color: #cfcfcf;
+    background-color: #fff;
     transition: width 0.3s ease;
 }
 

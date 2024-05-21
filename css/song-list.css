@@ -132,44 +132,49 @@ body {
 
 .artists img {
     width: 200px;
-    height: 200px; /* Adjusted width for a modern look */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
     cursor: pointer;
 }
 
 .artists img:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Custom scrollbar for Webkit browsers (Chrome, Safari) */
 .artists::-webkit-scrollbar {
     height: 10px;
 }
 
 .artists::-webkit-scrollbar-track {
-    background: transparent; /* Hide the scrollbar track background */
+    background: transparent;
 }
 
 .artists::-webkit-scrollbar-thumb {
-    background: linear-gradient(45deg, #34495E, #2C3E50); /* Gradient color */
+    background: linear-gradient(45deg, #34495E, #2C3E50);
     border-radius: 10px;
-    /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    transition: width 0.3s ease; /* 添加过渡效果 */
+    transition: width 0.3s ease;
 }
 
 .artists::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(45deg, #16A085, #1ABC9C); /* Darker gradient on hover */
-    width: 12px; /* 将宽度调整为12px */
+    background: linear-gradient(45deg, #16A085, #1ABC9C);
+    width: 12px; 
 }
 
-
 .title {
+    cursor: default;
     text-align: center;
-    font-size: 30px;
-    padding: 30px;
-    margin-top: 100px;
-    background-color: rgba(201, 195, 187, 0.688);
+    font-size: 36px;
+    padding: 5px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px);
+    color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
