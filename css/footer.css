@@ -29,12 +29,12 @@ footer ul li {
 }
 
 footer ul li a {
-    color: #ffffff; /* 白色图标 */
+    color: #ffffff;
     transition: color 0.3s ease;
 }
 
 footer ul li a:hover {
-    color: #1DA1F2; /* 悬停时变为 Twitter 蓝色 */
+    color: #1DA1F2;
 }
 
 footer ul li i {
