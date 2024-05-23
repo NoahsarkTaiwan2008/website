@@ -9,6 +9,17 @@ $color-primary-white: rgb(240, 240, 240);
     font-style: normal;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .welcome {
     cursor: default;
     margin-top: 10%;
@@ -17,7 +28,10 @@ $color-primary-white: rgb(240, 240, 240);
     font-weight: bolder;
     font-family: "Poetsen One", sans-serif;
     position: relative;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-out forwards;
 }
+
 
 .welcome h1 {
     font-size: 70px;
