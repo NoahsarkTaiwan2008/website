@@ -1,4 +1,75 @@
-body {
-    padding: 0;
+.information {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%; 
+    border-radius: 20px;
+}
+
+.information img {
+    max-width: 200px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    border-radius: 20px;
+}
+
+.info-text {
+    flex-grow: 1;
+}
+
+.info-text h2 {
     margin: 0;
+    font-size: 24px;
+}
+
+.info-text p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.info-text a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.info-text a:hover {
+    text-decoration: underline;
+}
+
+main {
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    width: 90%;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+
+/* song-lyrics-page.css */
+.lyrics {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.lyrics p {
+    margin: 10px 0;
+}
+
+.lyrics .chorus {
+    font-weight: bold;
+}
+
+.lyrics .bridge {
+    font-style: italic;
 }
