@@ -1,6 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 $color-primary-white: rgb(240, 240, 240);
 
+body {
+    background-color: #1a1a4d; 
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: #1a1a4d; 
+    padding-top: 50px;
+}
+
+.card-main {
+    padding: 20px;
+}
+
+.start-btn {
+    margin: 40px 0; 
+}
+
+.footer {
+    padding: 20px 0; 
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -22,8 +45,6 @@ $color-primary-white: rgb(240, 240, 240);
 
 .welcome {
     cursor: default;
-    margin-top: 10%;
-    margin-bottom: 20%;
     text-align: center;
     font-weight: bolder;
     font-family: "Poetsen One", sans-serif;
@@ -32,6 +53,10 @@ $color-primary-white: rgb(240, 240, 240);
     animation: fadeIn 1.5s ease-out forwards;
 }
 
+.welcome-background {
+    padding-bottom: 20%;
+    padding-top: 20%;
+}
 
 .welcome h1 {
     font-size: 70px;
@@ -42,11 +67,13 @@ $color-primary-white: rgb(240, 240, 240);
 }
 
 body {
-    background-image: url("images/pexels-steve-1292241.jpg"); 
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: cover;
+    background-color: #333;
     margin: 0;
+}
+
+main {
+    background-color: #1a1a4d;
+    padding-top: 50px;
 }
 
 .card-main {
@@ -63,7 +90,7 @@ body {
     height: 36rem;
     border-radius: 20px;
     overflow: hidden;
-    cursor: pointer;
+    cursor: default;
     position: relative;
     color: $color-primary-white;
     box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
@@ -147,6 +174,11 @@ body {
     justify-content: space-evenly;
 }
 
+.title {
+    text-align: center;
+    cursor: default;
+}
+
 .start-btn {
     display: flex;
     justify-content: center;
@@ -169,6 +201,36 @@ body {
     color: #fff; 
     text-decoration: none; 
     transition: background-color 0.3s ease, color 0.5s ease; 
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: #b3b3b3;
 }
 
 .separator {
@@ -198,9 +260,4 @@ body {
 
 .custom-btn i {
     margin: 0;
-}
-
-.title {
-    text-align: center;
-    cursor: default;
 }
