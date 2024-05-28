@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #4682B4, #5F9EA0, #87CEEB, #B0E0E6, #ADD8E6, #87CEEB, #5F9EA0, #4682B4);
+}
+
+.information {
+    background: linear-gradient(to bottom right, #DEB887, #D2B48C, #F4A460, #DAA520, #CD853F, #D2691E, #CD853F, #DAA520, #F4A460, #D2B48C, #DEB887);
+}
+
+main {
+    background: linear-gradient(to bottom right, #DEB887, #D2B48C, #F4A460, #DAA520, #CD853F, #D2691E, #CD853F, #DAA520, #F4A460, #D2B48C, #DEB887);
+}

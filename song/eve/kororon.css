@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #0a3d62, #1e5f74, #347a8a, #4b9aa2, #64bab8, #7ed8ce, #9af5e4, #b7ffff, #9af5e4, #7ed8ce, #64bab8, #4b9aa2);
+}
+
+.information {
+    background: linear-gradient(to bottom right, #5bc0eb, #75d6f5, #8fecff, #a8ffff, #c1ffff, #d3ffff, #c1ffff, #a8ffff, #8fecff, #75d6f5, #5bc0eb);
+}
+
+main {
+    background: linear-gradient(to bottom right, #5bc0eb, #75d6f5, #8fecff, #a8ffff, #c1ffff, #d3ffff, #c1ffff, #a8ffff, #8fecff, #75d6f5, #5bc0eb);
+}

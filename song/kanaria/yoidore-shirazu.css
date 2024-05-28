@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #2b0000, #3e0000, #500000, #620000, #740000, #860000, #980000, #aa0000, #bb0000, #cc0000, #dd0000, #ee0000);
+}
+
+.information {
+    background: linear-gradient(to bottom right, #660000, #7a0000, #8e0000, #a20000, #b60000, #ca0000, #de0000, #f20000, #e00000, #ce0000, #bc0000, #aa0000);
+}
+
+main {
+    background: linear-gradient(to bottom right, #660000, #7a0000, #8e0000, #a20000, #b60000, #ca0000, #de0000, #f20000, #e00000, #ce0000, #bc0000, #aa0000);
+}
