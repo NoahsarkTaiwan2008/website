@@ -73,3 +73,73 @@ main h1 {
 .lyrics .bridge {
     font-style: italic;
 }
+
+.origin-video-section img {
+    border: 10px solid transparent;
+    transition: border-color 1s ease;
+}
+
+.cover-section img {
+    border: 10px solid transparent;
+    transition: border-color 1s ease;
+}
+
+.origin-video-section, .cover-section img:hover {
+    border-color: #ffffff; 
+}
+
+
+.origin-video-section, .cover-section {
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px; 
+    width: 90%;
+}
+
+.origin-video-section h2, .cover-section h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+.scroll-container {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+.scroll-container a {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.scroll-container a {
+    position: relative;
+    display: inline-block;
+}
+
+.scroll-container a .tooltip {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border: 5px white solid;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+}
+
+.scroll-container a:hover .tooltip {
+    display: block;
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
