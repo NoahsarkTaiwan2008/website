@@ -12,3 +12,7 @@ body {
 main {
     background: linear-gradient(to bottom right, #91a3f1, #96b0f4, #9ac0f7, #9fd0fa, #a4e1fd, #a9f0ff, #a9f0ff, #a9f0ff, #a4e1fd, #9fd0fa, #9ac0f7, #96b0f4, #91a3f1);
 }
+
+.origin-video-section {
+    background: linear-gradient(to bottom right, #91a3f1, #96b0f4, #9ac0f7, #9fd0fa, #a4e1fd, #a9f0ff, #a9f0ff, #a9f0ff, #a4e1fd, #9fd0fa, #9ac0f7, #96b0f4, #91a3f1);
+}

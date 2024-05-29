@@ -186,8 +186,6 @@ body {
     transform: translateX(-50%) translateY(0);
 }
 
-
-
 .artists::-webkit-scrollbar {
     height: 10px;
 }

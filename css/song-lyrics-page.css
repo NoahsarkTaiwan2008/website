@@ -1,3 +1,22 @@
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+    background-color: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.8);;
+    cursor: pointer;
+}
+
 .information {
     display: flex;
     align-items: center;
@@ -54,7 +73,6 @@ main h1 {
     color: #333;
 }
 
-/* song-lyrics-page.css */
 .lyrics {
     font-size: 18px;
     line-height: 1.6;
@@ -76,18 +94,23 @@ main h1 {
 
 .origin-video-section img {
     border: 10px solid transparent;
-    transition: border-color 1s ease;
+    transition: border-color 0.5s ease;
+    width: 300px;
 }
 
 .cover-section img {
     border: 10px solid transparent;
-    transition: border-color 1s ease;
+    transition: border-color 0.5s ease;
+    width: 300px;
 }
 
-.origin-video-section, .cover-section img:hover {
-    border-color: #ffffff; 
+.origin-video-section img:hover {
+    border-color: #ffffff;
 }
 
+.cover-section img:hover {
+    border-color: #ffffff;
+}
 
 .origin-video-section, .cover-section {
     text-align: center;

@@ -12,3 +12,7 @@ body {
 main {
     background: linear-gradient(to bottom right, #4B7CB4, #5A9BD5, #A4C6EB, #E3F2FB, #FFFFFF); /* Light blue, Sky blue, Pale blue, Very pale blue, White gradients */
 }
+
+.origin-video-section, .cover-section {
+    background: linear-gradient(to bottom right, #4B7CB4, #5A9BD5, #A4C6EB, #E3F2FB, #FFFFFF); /* Light blue, Sky blue, Pale blue, Very pale blue, White gradients */
+}

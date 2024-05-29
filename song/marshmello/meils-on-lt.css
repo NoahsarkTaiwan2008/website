@@ -12,3 +12,7 @@ body {
 main {
     background: linear-gradient(to bottom right, #DEB887, #D2B48C, #F4A460, #DAA520, #CD853F, #D2691E, #CD853F, #DAA520, #F4A460, #D2B48C, #DEB887);
 }
+
+.origin-video-section {
+    background: linear-gradient(to bottom right, #DEB887, #D2B48C, #F4A460, #DAA520, #CD853F, #D2691E, #CD853F, #DAA520, #F4A460, #D2B48C, #DEB887);
+}

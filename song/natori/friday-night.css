@@ -12,3 +12,7 @@ body {
 main {
     background: linear-gradient(to bottom right, #FFA07A, #FF8C00, #FFA500, #FFD700, #FFE4B5, #FFD700, #FFA500, #FF8C00, #FFA07A); /* Light orange gradients */
 }
+
+.origin-video-section, .cover-section {
+    background: linear-gradient(to bottom right, #FFA07A, #FF8C00, #FFA500, #FFD700, #FFE4B5, #FFD700, #FFA500, #FF8C00, #FFA07A); /* Light orange gradients */
+}
