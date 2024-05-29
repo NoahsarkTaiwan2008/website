@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #000000, #111111, #222222, #333333); /* Black to dark gray gradients */
+}
+
+.information {
+    background: linear-gradient(to bottom right, #FFD700, #FFFFFF, #FFD700); /* Yellow light effect */
+}
+
+main {
+    background: linear-gradient(to bottom right, #FF69B4, #FFFFFF, #FF69B4); /* Pink light effect */
+}

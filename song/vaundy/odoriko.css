@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #8B0000, #FF4500, #FFD700, #8B4513); /* Red, Orange, Yellow, Brown gradients */
+}
+
+.information {
+    background: linear-gradient(to bottom right, #FF6347, #FF4500, #FFD700, #DAA520, #A0522D, #8B4513); /* Light orange, Dark orange, Yellow, Golden, Light brown, Dark brown gradients */
+}
+
+main {
+    background: linear-gradient(to bottom right, #FF6347, #FF4500, #FFD700, #DAA520, #A0522D, #8B4513); /* Light orange, Dark orange, Yellow, Golden, Light brown, Dark brown gradients */
+}

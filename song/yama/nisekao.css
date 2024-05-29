@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #1E3A5F, #274A78, #4B7CB4, #FFFFFF); /* Deep blue, Dark blue, Light blue, White gradients */
+}
+
+.information {
+    background: linear-gradient(to bottom right, #4B7CB4, #5A9BD5, #A4C6EB, #E3F2FB, #FFFFFF); /* Light blue, Sky blue, Pale blue, Very pale blue, White gradients */
+}
+
+main {
+    background: linear-gradient(to bottom right, #4B7CB4, #5A9BD5, #A4C6EB, #E3F2FB, #FFFFFF); /* Light blue, Sky blue, Pale blue, Very pale blue, White gradients */
+}
