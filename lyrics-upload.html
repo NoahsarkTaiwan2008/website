@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MelodyMatch - 上傳歌詞</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lyrics-upload.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+        integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="icon" href="images/icon.svg">
+</head>
+
+<body>
+    <div class="container mt-5">
+        <form>
+            <div class="form-group">
+                <label for="songCover">歌曲封面圖上傳</label>
+                <input type="file" class="form-control-file" id="songCover">
+            </div>
+            <div class="form-group">
+                <label for="songName">歌曲名稱</label>
+                <input type="text" class="form-control" id="songName">
+            </div>
+            <div class="form-group">
+                <label for="artist">藝人</label>
+                <input type="text" class="form-control" id="artist">
+            </div>
+            <div class="form-group">
+                <label for="singer">演唱者</label>
+                <input type="text" class="form-control" id="singer">
+            </div>
+            <div class="form-group">
+                <label for="album">收錄專輯</label>
+                <input type="text" class="form-control" id="album">
+            </div>
+            <div class="form-group">
+                <label for="originalLyrics">原文歌詞</label>
+                <textarea class="form-control" id="originalLyrics" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="translatedLyrics">翻譯歌詞</label>
+                <textarea class="form-control" id="translatedLyrics" rows="5"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">確認上傳</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

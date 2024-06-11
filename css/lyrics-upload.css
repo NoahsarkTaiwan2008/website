@@ -1,0 +1,103 @@
+/* 自定義樣式 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.upload-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form {
+    display: grid;
+    gap: 20px;
+}
+
+.upload-form h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload-form label {
+    font-weight: bold;
+}
+
+.upload-form .form-group {
+    position: relative;
+}
+
+.upload-form .form-group input[type="text"],
+.upload-form .form-group input[type="url"],
+.upload-form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.upload-form .form-group input[type="text"]:focus,
+.upload-form .form-group input[type="url"]:focus,
+.upload-form .form-group textarea:focus {
+    border-color: #26a69a;
+    outline: none;
+}
+
+.upload-form .form-group.file-upload {
+    overflow: hidden;
+}
+
+.upload-form .form-group.file-upload input[type="file"] {
+    display: none;
+}
+
+.upload-form .form-group.file-upload .upload-btn {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border: 2px dashed #aaa;
+    border-radius: 10px;
+    line-height: 150px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.upload-form .form-group.file-upload .upload-btn:hover {
+    background-color: #ccc;
+}
+
+.upload-form .form-group.file-upload img {
+    width: 100%;
+    height: auto;
+}
+
+.upload-form .form-group.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upload-form .btn-submit {
+    padding: 15px 30px;
+    background-color: #26a69a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form .btn-submit:hover {
+    background-color: #2bbbad;
+}

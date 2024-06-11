@@ -1,0 +1,184 @@
+/* 通用樣式 */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff; /* 更鮮豔的背景顏色 */
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff; /* 白色背景 */
+    border-radius: 10px; /* 圓角效果 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 陰影效果 */
+}
+
+.about-container section {
+    margin-bottom: 50px;
+}
+
+.about-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* 使命部分 */
+.mission p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 歷史部分 */
+.history p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* 團隊成員部分 */
+.team {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.team h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #4CAF50; /* 標題顏色 */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: #e6f7ff; /* 更鮮豔的卡片背景顏色 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: 250px; /* 卡片寬度 */
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+.issues {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.issues h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #4CAF50; /* 標題顏色 */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 圖標間距 */
+}
+
+.icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333; /* 文字顏色 */
+    transition: color 0.3s; /* 滑過顏色變化動畫 */
+}
+
+.icons a:hover {
+    color: #4CAF50; /* 滑過顏色 */
+}
+
+.icons img {
+    width: 100px; /* 圖片寬度 */
+    height: 100px; /* 圖片高度 */
+    margin-bottom: 10px;
+    border-radius: 50%; /* 圖片圓角 */
+}
+
+.fa-brands {
+    font-size: 24px; /* 圖標大小 */
+}
+
+.features .feature-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.features .feature-card {
+    background-color: #e6f7ff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    width: calc(25% - 20px); /* 調整卡片寬度，使其在一行上排列 */
+    text-align: center;
+}
+
+.features .feature-card:hover {
+    transform: scale(1.05);
+}
+
+.features .feature-card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.features .feature-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.features .feature-card p {
+    font-size: 16px;
+    color: #666;
+    padding: 0 20px;
+}
