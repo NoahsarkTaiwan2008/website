@@ -3,12 +3,12 @@
 
 :root {
     --color-primary-white: rgb(240, 240, 240);
-    --color-background: #9e9eba; /* 调亮背景颜色 */
+    --color-background: #9e9eba;
     --color-footer-background: #222;
     --color-footer-text: #fff;
     --color-footer-hover: #b3b3b3;
     --color-card-text: white;
-    --color-card-background: rgba(62, 80, 63, 0.85); /* 更亮的卡片背景 */
+    --color-card-background: rgba(62, 80, 63, 0.85); 
     --color-card-hover-background: rgba(52, 56, 52, 0.85);
     --color-button-background: rgba(193, 210, 211, 0.6);
     --color-button-hover-background: rgba(86, 91, 96, 0.6);
@@ -27,17 +27,25 @@
 }
 
 body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(135deg, #424242, #9e9eba);
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+nav {
     background-color: var(--color-background);
+    padding: 10px 0;
 }
 
 main {
-    background-color: var(--color-background);
     padding-top: 50px;
 }
 
 .welcome-background {
     padding: 20% 0;
     text-align: center;
+    background-color: var(--color-background);
 }
 
 .welcome {
@@ -71,6 +79,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
+    background-color: var(--color-background);
 }
 
 .card-main {
@@ -159,6 +168,8 @@ main {
 .title {
     text-align: center;
     color: var(--color-primary-white);
+    background-color: var(--color-background);
+    padding: 20px 0;
 }
 
 .start-btn {
@@ -234,4 +245,46 @@ main {
 
 .custom-btn i {
     margin: 0;
+}
+
+.feature-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--color-primary-white);
+}
+
+.feature-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature-card i {
+    font-size: 36px;
+    color: #007bff;
+}
+
+.feature-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.feature-card p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #666;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
