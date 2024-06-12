@@ -14,43 +14,45 @@
 </head>
 
 <body>
-    <div class="container mt-5">
-        <form>
-            <div class="form-group">
-                <label for="songCover">歌曲封面圖上傳</label>
-                <input type="file" class="form-control-file" id="songCover">
-            </div>
-            <div class="form-group">
-                <label for="songName">歌曲名稱</label>
-                <input type="text" class="form-control" id="songName">
-            </div>
-            <div class="form-group">
-                <label for="artist">藝人</label>
-                <input type="text" class="form-control" id="artist">
-            </div>
-            <div class="form-group">
-                <label for="singer">演唱者</label>
-                <input type="text" class="form-control" id="singer">
-            </div>
-            <div class="form-group">
-                <label for="album">收錄專輯</label>
-                <input type="text" class="form-control" id="album">
-            </div>
-            <div class="form-group">
-                <label for="originalLyrics">原文歌詞</label>
-                <textarea class="form-control" id="originalLyrics" rows="5"></textarea>
-            </div>
-            <div class="form-group">
-                <label for="translatedLyrics">翻譯歌詞</label>
-                <textarea class="form-control" id="translatedLyrics" rows="5"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">確認上傳</button>
-        </form>
-    </div>
+<!-- multistep form -->
+<form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">Account Setup</li>
+      <li>Social Profiles</li>
+      <li>Personal Details</li>
+    </ul>
+    <!-- fieldsets -->
+    <fieldset>
+      <h2 class="fs-title">Create your account</h2>
+      <h3 class="fs-subtitle">This is step 1</h3>
+      <input type="text" name="email" placeholder="Email" />
+      <input type="password" name="pass" placeholder="Password" />
+      <input type="password" name="cpass" placeholder="Confirm Password" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Social Profiles</h2>
+      <h3 class="fs-subtitle">Your presence on the social network</h3>
+      <input type="text" name="twitter" placeholder="Twitter" />
+      <input type="text" name="facebook" placeholder="Facebook" />
+      <input type="text" name="gplus" placeholder="Google Plus" />
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <input type="button" name="next" class="next action-button" value="Next" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">Personal Details</h2>
+      <h3 class="fs-subtitle">We will never sell it</h3>
+      <input type="text" name="fname" placeholder="First Name" />
+      <input type="text" name="lname" placeholder="Last Name" />
+      <input type="text" name="phone" placeholder="Phone" />
+      <textarea name="address" placeholder="Address"></textarea>
+      <input type="button" name="previous" class="previous action-button" value="Previous" />
+      <a href="https://twitter.com/GoktepeAtakan" class="submit action-button" target="_top">Submit</a>
+    </fieldset>
+  </form>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/lyrics-upload.js"></script>
 </body>
 
 </html>
