@@ -4,6 +4,8 @@
     <head>
         <meta charset='UTF-8'>
         <title>MelodyMatch - 歌詞上傳</title>
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-components-web/13.0.0/material-components-web.min.css'>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/material-components-web/13.0.0/material-components-web.min.js"></script>
         <link rel='stylesheet' href='css/lyrics-upload.css'>
         <link rel="stylesheet" href="css/nav-bar.css">
         <link rel="stylesheet" href="css/footer.css">
@@ -24,10 +26,39 @@
 
         <form>
             <div class="form-group">
-
+                <p>歌曲封面圖</p>
+                <input type="file" id="song-image" name="song-image" accept=".jpg, .png, .jpeg" required>
             </div>
+            <div class="form-group">
+                <p>歌曲名稱:</p>
+                <p><input type="text" name="name" required></p>
+            </div>
+            <div class="form-group">
+                <p>包含此歌曲的專輯:</p>
+                <p><input type="text" name="album" required></p>
+            </div>
+            <div class="form-group">
+                <p>藝人名稱:</p>
+                <p><input type="text" name="artist" required></p>
+            </div>
+            <div class="form-group">
+                <p>演唱者名稱:</p>
+                <p><input type="text" name="singer"></p>
+            </div>
+            <div class="form-group">
+                <label for="lyrics">原文歌詞:</label><br>
+                <textarea id="O-lyrics" name="lyrics"></textarea><br>
+                <input type="file" id="O-lyrics-flie" accept=".txt, .md, .xml, .html">
+            </div>
+            <div class="form-group">
+                <label for="lyrics">翻譯歌詞:</label><br>
+                <textarea id="T-lyrics" name="lyrics"></textarea><br>
+                <input type="file" id="O-lyrics-flie" accept=".txt, .md, .xml, .html">
+            </div>        
+            <input type="submit" onclick="alert('上傳成功，請等待審核。')">     
         </form>
 
+        
         <footer>
             <p>copyright &copy; 2024 MelodyMatch</p>
             <ul>
