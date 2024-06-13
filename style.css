@@ -29,7 +29,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(135deg, #424242, #9e9eba);
+    background-color: var(--color-background);
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
@@ -79,7 +79,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
-    background-color: var(--color-background);
+    background-color: transparent; /* 保持原始背景色 */
 }
 
 .card-main {
@@ -253,38 +253,39 @@ main {
     align-items: center;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: var(--color-primary-white);
+    background-color: var(--color-background);
 }
 
 .feature-card {
-    width: 300px;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* 增大卡片大小 */
+    padding: 30px; /* 增加內邊距 */
+    border-radius: 15px; /* 圓角效果 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     text-align: center;
     margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .feature-card i {
-    font-size: 36px;
+    font-size: 48px; /* 增加圖標大小 */
     color: #007bff;
+    margin-bottom: 15px; /* 調整圖標和文字間距 */
 }
 
 .feature-card h3 {
     margin-top: 20px;
-    font-size: 24px;
+    font-size: 28px; /* 增加標題字體大小 */
     color: #333;
 }
 
 .feature-card p {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px; /* 增加文字大小 */
     color: #666;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
