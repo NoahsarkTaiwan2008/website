@@ -2,29 +2,89 @@ body {
     padding: 0;
     margin: 0;
     background-color: #9e9eba;
+    font-family: Arial, sans-serif;
 }
 
-form {
-    max-width: 600px;
-    margin: 20px auto; 
-    padding: 20px; 
-    background-color: rgba(255, 255, 255, 0.9);
+.navbar {
+    background-color: #4f555c;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #a0a3a7;
+}
+
+.card {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slide-in 0.5s ease forwards;
+    overflow: hidden; /* 確保內容溢出時不會顯示出來 */
 }
 
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card form {
+    padding: 20px;
+}
 
 .form-group {
     margin-bottom: 20px;
 }
 
-.form-group p {
-    margin: 0;
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 input[type="text"],
+input[type="number"],
 textarea {
-    width: 100%;
+    width: calc(100% - 22px);
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -34,11 +94,6 @@ textarea {
 input[type="file"] {
     display: block;
     margin-top: 5px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
 }
 
 textarea {
@@ -57,4 +112,35 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #323436;
+}
+
+footer {
+    background-color: #4f555c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #a0a3a7;
 }

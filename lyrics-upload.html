@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 
-    <head>
-        <meta charset='UTF-8'>
-        <title>MelodyMatch - 歌詞上傳</title>
-        <link rel='stylesheet' href='css/lyrics-upload.css'>
-        <link rel="stylesheet" href="css/nav-bar.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='icon' href='images/icon.svg'>
-    </head>
+<head>
+    <meta charset='UTF-8'>
+    <title>MelodyMatch - 歌詞上傳</title>
+    <link rel='stylesheet' href='css/lyrics-upload.css'>
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css"
+        integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA=="
+        crossorigin="anonymous" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' href='images/icon.svg'>
+</head>
 
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="nav-logo">MelodyMatch</a>
-            <ul class="nav-links">
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="song/song-list.html">所有歌詞</a></li>
-                <li><a href="login.html">登入</a></li>
-            </ul>
-        </nav>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo"><i class="fas fa-music"></i> MelodyMatch</a>
+        <ul class="nav-links">
+            <li><a href="index.html"></i> 首頁</a></li>
+            <li><a href="song/song-list.html"></i> 所有歌詞</a></li>
+            <li><a href="login.html"></i> 登入</a></li>
+        </ul>
+    </nav>
 
+    <div class="card">
         <form>
             <div class="form-group">
-                <p>歌曲封面圖</p>
-                <input type="file" id="song-image" name="song-image" accept=".jpg, .png, .jpeg" required>
+                <label for="song-image"><i class="fas fa-image"></i> 歌曲封面圖</label>
+                <input type="file" id="song-image" name="song-image" accept=".jpg, .png, .jpeg, .svg" required>
             </div>
             <div class="form-group">
-                <p>歌曲名稱:</p>
-                <p><input type="text" name="name" required></p>
+                <label for="name"><i class="fas fa-music"></i> 歌曲名稱</label>
+                <input type="text" id="name" name="name" required>
             </div>
             <div class="form-group">
-                <p>包含此歌曲的專輯:</p>
-                <p><input type="text" name="album" required></p>
+                <label for="album"><i class="fas fa-compact-disc"></i> 包含此歌曲的專輯</label>
+                <input type="text" id="album" name="album" required>
             </div>
             <div class="form-group">
-                <p>藝人名稱:</p>
-                <p><input type="text" name="artist" required></p>
+                <label for="artist"><i class="fas fa-user"></i> 藝人名稱</label>
+                <input type="text" id="artist" name="artist" required>
             </div>
             <div class="form-group">
-                <p>演唱者名稱:</p>
-                <p><input type="text" name="singer"></p>
+                <label for="singer"><i class="fas fa-microphone"></i> 演唱者名稱</label>
+                <input type="text" id="singer" name="singer">
             </div>
             <div class="form-group">
-                <label for="lyrics">原文歌詞:</label><br>
-                <textarea id="O-lyrics" name="lyrics"></textarea><br>
-                <input type="file" id="O-lyrics-flie" accept=".txt, .md, .xml, .html">
+                <label for="release-year"><i class="fas fa-calendar-alt"></i> 發行年分</label>
+                <input type="number" id="release-year" name="release-year" min="1900" max="2099" step="1" required>
             </div>
             <div class="form-group">
-                <label for="lyrics">翻譯歌詞:</label><br>
-                <textarea id="T-lyrics" name="lyrics"></textarea><br>
-                <input type="file" id="O-lyrics-flie" accept=".txt, .md, .xml, .html">
-            </div>        
-            <input type="submit" onclick="alert('上傳成功，請等待審核。')">     
+                <label for="O-lyrics"><i class="fas fa-file-alt"></i> 原文歌詞</label>
+                <textarea id="O-lyrics" name="lyrics"></textarea>
+                <input type="file" id="O-lyrics-file" accept=".txt, .md, .xml, .html">
+            </div>
+            <div class="form-group">
+                <label for="T-lyrics"><i class="fas fa-file-alt"></i> 翻譯歌詞</label>
+                <textarea id="T-lyrics" name="lyrics"></textarea>
+                <input type="file" id="T-lyrics-file" accept=".txt, .md, .xml, .html">
+            </div>
+            <input type="submit" onclick="alert('上傳成功，請等待審核。')">
         </form>
+    </div>
 
-        
-        <footer>
-            <p>copyright &copy; 2024 MelodyMatch</p>
-            <ul>
-                <li><a href="https://github.com/NoahsarkTaiwan2008/website" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        </footer>
-    </body>
+    <footer>
+        <p>copyright &copy; 2024 MelodyMatch</p>
+        <ul>
+            <li><a href="https://github.com/NoahsarkTaiwan2008/website" target="_blank"><i
+                        class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></i></a></li>
+        </ul>
+    </footer>
+</body>
 
 </html>

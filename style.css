@@ -79,7 +79,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
-    background-color: transparent; /* 保持原始背景色 */
+    background-color: transparent; 
 }
 
 .card-main {
@@ -257,9 +257,9 @@ main {
 }
 
 .feature-card {
-    width: 350px; /* 增大卡片大小 */
-    padding: 30px; /* 增加內邊距 */
-    border-radius: 15px; /* 圓角效果 */
+    width: 350px;
+    padding: 30px; 
+    border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     text-align: center;
@@ -268,20 +268,20 @@ main {
 }
 
 .feature-card i {
-    font-size: 48px; /* 增加圖標大小 */
+    font-size: 48px;
     color: #007bff;
-    margin-bottom: 15px; /* 調整圖標和文字間距 */
+    margin-bottom: 15px;
 }
 
 .feature-card h3 {
     margin-top: 20px;
-    font-size: 28px; /* 增加標題字體大小 */
+    font-size: 28px; 
     color: #333;
 }
 
 .feature-card p {
     margin-top: 10px;
-    font-size: 18px; /* 增加文字大小 */
+    font-size: 18px;
     color: #666;
 }
 

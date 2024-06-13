@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='UTF-8'>
-        <title>MelodyMatch - 登入</title>
-        <link rel='stylesheet' href='css/login.css'>
-        <link rel="stylesheet" href="css/nav-bar.css">
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='icon' href='images/icon.svg'>
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="index.html" class="nav-logo">MelodyMatch</a>
-            <ul class="nav-links">
-                <li><a href="index.html">首頁</a></li>
-                <li><a href="about.html">關於我們</a></li>
-                <li><a href="song/song-list.html">所有歌詞</a></li>
-                <li><a href="lyrics-upload.html">新增歌詞</a></li>
-            </ul>
-        </nav>
+<head>
+    <meta charset='UTF-8'>
+    <title>MelodyMatch - 登入</title>
+    <link rel='stylesheet' href='css/login.css'>
+    <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' href='images/icon.svg'>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html" class="nav-logo">MelodyMatch</a>
+        <ul class="nav-links">
+            <li><a href="index.html">首頁</a></li>
+            <li><a href="about.html">關於我們</a></li>
+            <li><a href="song/song-list.html">所有歌詞</a></li>
+            <li><a href="lyrics-upload.html">新增歌詞</a></li>
+        </ul>
+    </nav>
 
-        <div class="login-container">
-            <div class="login-content">
-                <h2>登入</h2>
-                <form>
-                    <div class="input-group">
-                        <label for="username">名稱</label>
-                        <input type="text" id="username" name="username" required>
-                    </div>
-                    <div class="input-group">
-                        <label for="password">密碼</label>
-                        <input type="password" id="password" name="password" required>
-                    </div>
-                    <button type="submit">登入</button>
-                </form>
+    <div class="login-container">
+        <div class="login-content">
+            <h2>登入</h2>
+            <form>
+                <div class="input-group">
+                    <label for="username">名稱</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">密碼</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="input-group">
+                    <a href="#" class="forgot-password">忘記密碼？</a>
+                    <a href="register.html" class="register-link">註冊</a>
+                </div>
+                <button type="submit">登入</button>
+            </form>
+            <div class="social-login">
+                <p>或使用社交媒體登入：</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-x-twitter"></i></i></a></li>
+                </ul>
             </div>
         </div>
+    </div>
 
-        <footer>
-            <p>copyright &copy; 2024 MelodyMatch</p>
-            <ul>
-                <li><a href="https://github.com/NoahsarkTaiwan2008/website" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-            </ul>
-        </footer>
-    </body>
+    <footer>
+        <p>copyright &copy; 2024 MelodyMatch</p>
+        <ul>
+            <li><a href="https://github.com/NoahsarkTaiwan2008/website" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></i></a></li>
+        </ul>
+    </footer>
+</body>
 </html>

@@ -72,13 +72,40 @@ button[type="submit"]:hover {
     background-color: #33373a;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.social-login ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-login ul li {
+    margin: 0 10px;
+}
+
+.social-login ul li a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 20px;
+    background-color: #495354;
+    transition: background-color 0.3s ease;
+}
+
+.social-login ul li a:hover {
+    background-color: #33373a;
 }
