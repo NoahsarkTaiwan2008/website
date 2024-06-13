@@ -2,17 +2,17 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom right, #FFFFFF, #87CEEB, #87CEFA);
+    background: linear-gradient(to bottom right, #8B4513, #000000, #FFF8DC, #B22222);
 }
 
 .information {
-    background: linear-gradient(to bottom right, #87CEEB, #FFFFFF, #87CEEB);
+    background: linear-gradient(to bottom right, #8B4513, #FFF8DC, #8B4513);
 }
 
 main {
-    background: linear-gradient(to bottom right, #87CEEB, #FFFFFF, #87CEEB);
+    background: linear-gradient(to bottom right, #8B4513, #FFF8DC, #8B4513);
 }
 
 .origin-video-section, .cover-section {
-    background: linear-gradient(to bottom right, #87CEEB, #FFFFFF, #87CEEB); 
+    background: linear-gradient(to bottom right, #8B4513, #FFF8DC, #8B4513); 
 }
