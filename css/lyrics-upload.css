@@ -5,45 +5,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar {
-    background-color: #4f555c;
-    color: #fff;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #fff;
-}
-
-.nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 15px;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1em;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #a0a3a7;
-}
-
 .card {
     max-width: 800px;
     margin: 20px auto;
@@ -52,7 +13,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     animation: slide-in 0.5s ease forwards;
-    overflow: hidden; /* 確保內容溢出時不會顯示出來 */
+    overflow: hidden;
 }
 
 @keyframes slide-in {
@@ -112,35 +73,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #323436;
-}
-
-footer {
-    background-color: #4f555c;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer ul {
-    list-style: none;
-    padding: 0;
-    margin: 10px 0 0 0;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-footer ul li {
-    display: inline;
-}
-
-footer ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.5em;
-    transition: color 0.3s ease;
-}
-
-footer ul li a:hover {
-    color: #a0a3a7;
 }
