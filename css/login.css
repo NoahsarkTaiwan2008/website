@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient(135deg, #424242, #9e9eba);
+    background: linear-gradient(135deg, #3AA6B9, #9e9eba);
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .login-content {
-    background-color: #ffffff99;
+    background-color: #F9F9E0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 40px;
@@ -53,7 +53,7 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #4f555d;
+    border-color: #3AA6B9;
 }
 
 button[type="submit"] {
@@ -61,7 +61,7 @@ button[type="submit"] {
     padding: 12px;
     border: none;
     border-radius: 4px;
-    background-color: #495354;
+    background-color: #FF9EAA;
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -69,7 +69,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #33373a;
+    background-color: #FFD0D0;
 }
 
 .social-login {

@@ -1,14 +1,14 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #9e9eba;
+    background-color: #3AA6B9;
     font-family: Arial, sans-serif;
 }
 
 .card {
     max-width: 800px;
     margin: 20px auto;
-    background-color: #fff;
+    background-color: #FFF;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -62,8 +62,8 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: #4f555c;
-    color: #fff;
+    background-color: #FF9EAA;
+    color: #FFF; 
     border: none;
     border-radius: 3px;
     padding: 10px 20px;
@@ -72,5 +72,5 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #323436;
+    background-color: #FFD0D0;
 }

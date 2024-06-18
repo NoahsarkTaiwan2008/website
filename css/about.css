@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f0f8ff; 
+    background-color: #3AA6B9;
 }
 
 a {
@@ -26,7 +26,7 @@ h2 {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #ffffff;
+    background-color: #F9F9E0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -38,11 +38,13 @@ h2 {
 .about-container h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #3AA6B9;
 }
 
 .mission p {
     font-size: 18px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .team {
@@ -53,7 +55,7 @@ h2 {
 .team h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: #4CAF50; 
+    color: #4CAF50;
 }
 
 .row {
@@ -64,11 +66,11 @@ h2 {
 }
 
 .card {
-    background-color: #e6f7ff; 
+    background-color: #FFD0D0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    width: 250px; 
+    width: 250px;
     text-align: center;
 }
 
@@ -119,16 +121,16 @@ h2 {
     flex-direction: column;
     align-items: center;
     text-decoration: none;
-    color: #333; 
+    color: #333;
     transition: color 0.3s;
 }
 
 .icons a:hover {
-    color: #4CAF50; 
+    color: #4CAF50;
 }
 
 .icons img {
-    width: 100px; 
+    width: 100px;
     height: 100px;
     margin-bottom: 10px;
     border-radius: 50%;
@@ -146,7 +148,7 @@ h2 {
 }
 
 .features .feature-card {
-    background-color: #e6f7ff;
+    background-color: #FFD0D0;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
@@ -166,6 +168,7 @@ h2 {
 .features .feature-card h3 {
     font-size: 20px;
     margin: 10px 0;
+    color: #3AA6B9;
 }
 
 .features .feature-card p {

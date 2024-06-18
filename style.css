@@ -3,21 +3,22 @@
 
 :root {
     --color-primary-white: rgb(240, 240, 240);
-    --color-background: #9e9eba;
+    --color-background: #3AA6B9;
     --color-footer-background: #222;
     --color-footer-text: #fff;
     --color-footer-hover: #b3b3b3;
     --color-card-text: white;
-    --color-card-background: rgba(62, 80, 63, 0.85); 
-    --color-card-hover-background: rgba(52, 56, 52, 0.85);
-    --color-button-background: rgba(193, 210, 211, 0.6);
-    --color-button-hover-background: rgba(86, 91, 96, 0.6);
+    --color-card-background: rgba(255, 208, 208, 0.85);
+    --color-card-hover-background: rgba(255, 158, 170, 0.85);
+    --color-button-background: rgba(249, 249, 224, 0.6);
+    --color-button-hover-background: rgba(249, 249, 224, 0.8);
     --font-family-primary: "Poetsen One", sans-serif;
     --font-family-secondary: 'Roboto', sans-serif;
     --font-family-condensed: 'Roboto Condensed', sans-serif;
     --transition-duration: 0.3s;
     --transition-ease: ease;
 }
+
 
 * {
     margin: 0;
@@ -261,31 +262,88 @@ main {
     padding: 30px; 
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+    background-color: #518690;
+    background-image: linear-gradient(to right, #f9f9f9 30%, #3468b2 70%);
+    background-size: 200% 100%;
+    background-position: right;
     text-align: center;
     margin-bottom: 20px;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s, box-shadow 0.3s, background-position 0.5s, background-image 0.5s; /* 加入背景位置和漸層色變化的 transition */
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    background-position: left;
+    background-image: linear-gradient(to right, #8ec9cd 30%, #2e70cd 70%);
 }
 
 .feature-card i {
     font-size: 48px;
-    color: #007bff;
+    color: #ffffff;
     margin-bottom: 15px;
 }
 
 .feature-card h3 {
     margin-top: 20px;
     font-size: 28px; 
-    color: #333;
+    color: #ffffff;
 }
 
 .feature-card p {
     margin-top: 10px;
     font-size: 18px;
-    color: #666;
+    color: #ffffff;
 }
 
-.feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+
+.text {
+    text-align: center;
+}
+
+.benefit-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5% 10%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(to right, #f9f9f9 30%, #3468b2 70%);
+    background-size: 200% 100%;
+    background-position: right;
+    border-radius: 8px;
+    overflow: hidden;
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s, background-position 0.5s;
+    border: none;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.benefit-container:hover {
+    transform: scale(1.1);
+    background-position: left;
+}
+
+.benefit-image {
+    flex: 1;
+    max-width: 40%;
+    box-sizing: border-box;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+
+.benefit-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.benefit-text {
+    flex: 2;
+    max-width: 60%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

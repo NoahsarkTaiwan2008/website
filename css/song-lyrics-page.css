@@ -140,11 +140,6 @@ main h1 {
     margin: 0 5px;
 }
 
-.scroll-container a {
-    position: relative;
-    display: inline-block;
-}
-
 .scroll-container a .tooltip {
     display: none;
     position: absolute;
