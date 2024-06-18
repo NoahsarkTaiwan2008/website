@@ -296,6 +296,10 @@ main {
     color: #ffffff;
 }
 
+.feature {
+    margin: 10% 3%;
+    padding: 6% 2%;
+}
 
 .text {
     text-align: center;
