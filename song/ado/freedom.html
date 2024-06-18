@@ -1,182 +1,186 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset='UTF-8'>
-        <title>[Ado - FREEDOM] MelodyMatch</title>
-        <link rel="stylesheet" href="../../css/nav-bar.css">
-        <link rel="stylesheet" href="../../css/footer.css">
-        <link rel="stylesheet" href="../../css/song-lyrics-page.css">
-        <link rel="stylesheet" href="../../css/separator.css">
-        <link rel="stylesheet" href="freedom.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
-        <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='icon' href='../../images/icon.svg'>
-    </head>
-    <body>
-        <nav class="navbar">
-            <a href="../../index.html" class="nav-logo">MelodyMatch</a>
-            <ul class="nav-links">
-                <li><a href="../../index.html">首頁</a></li>
-                <li><a href="../../about.html">關於我們</a></li>
-                <li><a href="../song-list.html">所有歌詞</a></li>
-                <li><a href="../../lyrics-upload.html">新增歌詞</a></li>
-                <li><a href="../../login.html">登入</a></li>
-                <li>
-                    <form class="search-form" action="search-results.html" method="get">
-                        <input type="text" name="query" class="search-input" placeholder="搜尋歌曲或藝人">
-                        <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
+<head>
+    <meta charset='UTF-8'>
+    <title>[Ado - FREEDOM] MelodyMatch</title>
+    <link rel="stylesheet" href="../../css/nav-bar.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/song-lyrics-page.css">
+    <link rel="stylesheet" href="../../css/separator.css">
+    <link rel="stylesheet" href="freedom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='icon' href='../../images/icon.svg'>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../../index.html" class="nav-logo">MelodyMatch</a>
+        <ul class="nav-links">
+            <li><a href="../../index.html">首頁</a></li>
+            <li><a href="../../about.html">關於我們</a></li>
+            <li><a href="../song-list.html">所有歌詞</a></li>
+            <li><a href="../../lyrics-upload.html">新增歌詞</a></li>
+            <li><a href="../../login.html">登入</a></li>
+            <li>
+                <form class="search-form" action="search-results.html" method="get">
+                    <input type="text" name="query" class="search-input" placeholder="搜尋歌曲或藝人">
+                    <button type="submit" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </li>
+        </ul>
+    </nav>
 
-        <div class="information">
-            <img src="../../images/song/freedom.jpg">
-            <div class="info-text">
-                <h2>FREEDOM</h2>
-                <p>藝人: Ado</p>
-                <p>發行年分: 2022</p>
-                <p>收錄專輯: <a href="https://open.spotify.com/album/0tDsHtvN9YNuZjlqHvDY2P" target="_blank">狂言</a></p>
+    <div class="information">
+        <img src="../../images/song/freedom.jpg">
+        <div class="info-text">
+            <h2>FREEDOM</h2>
+            <p>藝人: Ado</p>
+            <p>發行年分: 2022</p>
+            <p>收錄專輯: <a href="https://open.spotify.com/album/0tDsHtvN9YNuZjlqHvDY2P" target="_blank">狂言</a></p>
+        </div>
+    </div>
+
+    <main id="app">
+        <h1>FREEDOM</h1>
+        <div class="separator"></div>
+        <div class="tabs">
+            <select v-model="selectedLanguage" class="language-select">
+                <option value="original">原文</option>
+                <option value="zh_tw">繁體中文</option>
+                <option value="zh_cn">簡體中文</option>
+            </select>            
+        </div>
+        <div v-if="selectedLanguage === 'original'" class="tab-content active">
+            <div class="lyrics">
+                <p>
+                    嫌われないように<br>
+                    ビクビク下ばかり見ていたって<br>
+                    何も変わんないさ<br>
+                    迷わずに突き進め step & step<br><br>
+                    奪われないように<br>
+                    コソコソして隠したがったって<br>
+                    「私らしさ」って<br>
+                    武器へと変えて切り開いていけ<br><br>
+                    文句があるなら<br>
+                    正面堂々とぶつかって<br>
+                    言い訳無用で<br>
+                    さぁ one, two, one, two, three, four<br><br>
+                    上等さ 取るに足んない<br>
+                    同情じゃ救えないから<br>
+                    You and I ガチの勝敗<br>
+                    革命を起こせ<br>
+                    同調は二束三文<br>
+                    堂々と立ち向かって<br>
+                    明日を笑え<br><br>
+                    膨れ上がっていく<br>
+                    しがらみや秘密が奪っていく<br>
+                    ならいっそどうだって<br><br>
+                    逃げも隠れもせず勝負して<br>
+                    「知らなくていい」なんて<br>
+                    物知り顔で嘲笑うような<br>
+                    偉そうな連中に<br>
+                    この中指立てて歩いていけ<br><br>
+                    上等さ チルじゃ足んない<br>
+                    衝動は燃やせないから<br>
+                    You and I タダじゃ絶対<br>
+                    終われない だから<br>
+                    頂上へ駆け抜けて<br>
+                    挑戦に立ち向かって<br>
+                    明日へ翔べ<br><br>
+                    Hey, hey, hey<br>
+                    声上げて<br>
+                    Whoa (whoa)<br>
+                    Hey, hey, hey<br>
+                    手を掲げ<br>
+                    Whoa (whoa)<br>
+                    Whoa-oh-oh-oh<br>
+                    Whoa-oh-oh-oh<br>
+                    Whoa, whoa<br>
+                    さぁ one, two, one, two, three, four<br><br>
+                    上等さ<br>
+                    取るに足んない<br>
+                    同情じゃ救えないから<br>
+                    You and I ガチの勝敗<br>
+                    革命を起こせ<br>
+                    同調は二束三文<br>
+                    堂々と立ち向かって<br>
+                    明日を笑え
+                </p>
             </div>
         </div>
-
-        <main>
-            <h1>FREEDOM</h1>
-            <div class="separator"></div>
-            <div class="tabs">
-                <button class="tab-button active" data-tab="original">原文</button>
-                <button class="tab-button" data-tab="translation">翻譯</button>
-            </div>
-            <div class="tab-content active" id="original">
-                <div class="lyrics">
-                    <p>
-                        嫌われないように<br>
-                        ビクビク下ばかり見ていたって<br>
-                        何も変わんないさ<br>
-                        迷わずに突き進め step & step<br><br>
-                        奪われないように<br>
-                        コソコソして隠したがったって<br>
-                        「私らしさ」って<br>
-                        武器へと変えて切り開いていけ<br><br>
-                        文句があるなら<br>
-                        正面堂々とぶつかって<br>
-                        言い訳無用で<br>
-                        さぁ one, two, one, two, three, four<br><br>
-                        上等さ 取るに足んない<br>
-                        同情じゃ救えないから<br>
-                        You and I ガチの勝敗<br>
-                        革命を起こせ<br>
-                        同調は二束三文<br>
-                        堂々と立ち向かって<br>
-                        明日を笑え<br><br>
-                        膨れ上がっていく<br>
-                        しがらみや秘密が奪っていく<br>
-                        ならいっそどうだって<br><br>
-                        逃げも隠れもせず勝負して<br>
-                        「知らなくていい」なんて<br>
-                        物知り顔で嘲笑うような<br>
-                        偉そうな連中に<br>
-                        この中指立てて歩いていけ<br><br>
-                        上等さ チルじゃ足んない<br>
-                        衝動は燃やせないから<br>
-                        You and I タダじゃ絶対<br>
-                        終われない だから<br>
-                        頂上へ駆け抜けて<br>
-                        挑戦に立ち向かって<br>
-                        明日へ翔べ<br><br>
-                        Hey, hey, hey<br>
-                        声上げて<br>
-                        Whoa (whoa)<br>
-                        Hey, hey, hey<br>
-                        手を掲げ<br>
-                        Whoa (whoa)<br>
-                        Whoa-oh-oh-oh<br>
-                        Whoa-oh-oh-oh<br>
-                        Whoa, whoa<br>
-                        さぁ one, two, one, two, three, four<br><br>
-                        上等さ<br>
-                        取るに足んない<br>
-                        同情じゃ救えないから<br>
-                        You and I ガチの勝敗<br>
-                        革命を起こせ<br>
-                        同調は二束三文<br>
-                        堂々と立ち向かって<br>
-                        明日を笑え
-                    </p>
-                </div>
-            </div>
-            <div class="tab-content" id="translation">
-                <div class="lyrics">
-                    <p>
-                        我為了不會被眾人討厭<br>
-                        而總是戰戰兢兢地面朝著下方<br>
-                        我根本沒有改變啊<br>
-                        毫不迷惘地奮勇前進吧 STEP & STEP<br><br>
-                        我為了不會被眾人奪走一切<br>
-                        而打算偷偷摸摸地藏起來<br>
-                        將所謂的「做自己」<br>
-                        轉變為武器並殺開一條路吧<br><br>
-                        如果你想抱怨的話<br>
-                        那麼就從正面堂堂正正地碰撞吧<br>
-                        藉口毫無用處<br>
-                        來吧 1, 2, 1, 2, 3, 4<br><br>
-                        上等啊　不值一提<br>
-                        只有同情的話可是毫無救贖的啊<br>
-                        You & I　認真的勝負<br>
-                        發起革命吧<br>
-                        贊同一文不值<br>
-                        堂堂正正地對抗<br>
-                        並嘲笑明天吧<br><br>
-                        慢慢膨脹起來的<br>
-                        牽絆和秘密漸漸被奪走<br>
-                        那麼索性就讓我們<br><br>
-                        不逃跑且不躲藏地發起勝負吧<br>
-                        「你不必知道」什麼的<br>
-                        對就像是用知識淵博的表情嘲笑般的<br>
-                        那些自以為是的人們<br>
-                        舉起這根中指並邁開步伐吧<br><br>
-                        上等啊　只有冷靜還不足夠<br>
-                        我不會讓衝動燃燒起來啊<br>
-                        You & I　只有徒勞的話是絕對<br>
-                        絕對無法　結束的啊<br>
-                        往山頂上奔去<br>
-                        對抗挑戰<br>
-                        並往明天飛翔吧<br><br>
-                        Hey Hey Hey<br>
-                        提高聲量<br>
-                        Hey Hey Hey<br>
-                        揮舞雙手<br>
-                        來吧 1, 2, 1, 2, 3, 4<br>
-                        上等啊<br>
-                        不值一提<br>
-                        只有同情的話可是毫無救贖的啊<br>
-                        You & I　認真的勝負<br>
-                        發起革命吧<br><br>
-                        贊同一文不值<br>
-                        堂堂正正地對抗<br>
-                        並嘲笑明天吧
-                    </p>
-                </div>
-            </div>
-        </main>
-        <script src="../../js/toggleLyrics.js"></script>
-        <script src="../../js/search-block.js"></script>
-
-        <div class="origin-video-section">
-            <h2>原版影片</h2>
-            <div class="separator"></div>
-            <div class="scroll-container">
-                <a href="https://www.youtube.com/watch?v=hgyGhu49sGc" target="_blank"><img src="../../images/link-images/freedom-ado.jpg" width=""><span class="tooltip">Ado</span></a>
+        <div v-if="selectedLanguage === 'zh_tw'" class="tab-content">
+            <div class="lyrics">
+                <p>
+                    我為了不會被眾人討厭<br>
+                    而總是戰戰兢兢地面朝著下方<br>
+                    我根本沒有改變啊<br>
+                    毫不迷惘地奮勇前進吧 STEP & STEP<br><br>
+                    我為了不會被眾人奪走一切<br>
+                    而打算偷偷摸摸地藏起來<br>
+                    將所謂的「做自己」<br>
+                    轉變為武器並殺開一條路吧<br><br>
+                    如果你想抱怨的話<br>
+                    那麼就從正面堂堂正正地碰撞吧<br>
+                    藉口毫無用處<br>
+                    來吧 1, 2, 1, 2, 3, 4<br><br>
+                    上等啊　不值一提<br>
+                    只有同情的話可是毫無救贖的啊<br>
+                    You & I　認真的勝負<br>
+                    發起革命吧<br>
+                    贊同一文不值<br>
+                    堂堂正正地對抗<br>
+                    並嘲笑明天吧<br><br>
+                    慢慢膨脹起來的<br>
+                    牽絆和秘密漸漸被奪走<br>
+                    那麼索性就讓我們<br><br>
+                    不逃跑且不躲藏地發起勝負吧<br>
+                    「你不必知道」什麼的<br>
+                    對就像是用知識淵博的表情嘲笑般的<br>
+                    那些自以為是的人們<br>
+                    舉起這根中指並邁開步伐吧<br><br>
+                    上等啊　只有冷靜還不足夠<br>
+                    我不會讓衝動燃燒起來啊<br>
+                    You & I　只有徒勞的話是絕對<br>
+                    絕對無法　結束的啊<br>
+                    往山頂上奔去<br>
+                    對抗挑戰<br>
+                    並往明天飛翔吧<br><br>
+                    Hey Hey Hey<br>
+                    提高聲量<br>
+                    Hey Hey Hey<br>
+                    揮舞雙手<br>
+                    來吧 1, 2, 1, 2, 3, 4<br>
+                    上等啊<br>
+                    不值一提<br>
+                    只有同情的話可是毫無救贖的啊<br>
+                    You & I　認真的勝負<br>
+                    發起革命吧<br><br>
+                    贊同一文不值<br>
+                    堂堂正正地對抗<br>
+                    並嘲笑明天吧
+                </p>
             </div>
         </div>
+    </main>
+    <script src="../../js/search-block.js"></script>
+    <script src="../../js/toggleLyrics.js"></script>
 
-        <footer>
-            <p>copyright &copy; 2024 MelodyMatch</p>
-            <ul>
-                <li><a href="https://github.com/NoahsarkTaiwan2008/website" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
-            </ul>
-        </footer>
-    </body>
+    <div class="origin-video-section">
+        <h2>原版影片</h2>
+        <div class="separator"></div>
+        <div class="scroll-container">
+            <a href="https://www.youtube.com/watch?v=hgyGhu49sGc" target="_blank"><img src="../../images/link-images/freedom-ado.jpg" width=""><span class="tooltip">Ado</span></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>copyright &copy; 2024 MelodyMatch</p>
+        <ul>
+            <li><a href="https://github.com/NoahsarkTaiwan2008/website" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+        </ul>
+    </footer>
+</body>
 </html>

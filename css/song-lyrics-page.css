@@ -163,42 +163,50 @@ main h1 {
 }
 
 .tabs {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.tab-button {
-    padding: 10px 20px;
-    border: 1px solid transparent;
-    cursor: pointer;
-    background-color: #e0e0e0;
-    border-radius: 5px;
-    margin: 0 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    font-size: 16px;
-    color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.tab-button:hover {
-    background-color: #d1d1d1;
-}
-
-.tab-button.active {
-    background-color: #007BFF;
+.tabs select {
+    font-size: 18px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #4CAF50;
     color: #fff;
-    border: 1px solid #007BFF;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    appearance: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 200px;
+    margin: 0 auto;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.tab-content {
-    display: none;
-    padding: 20px;
-    border-top: none;
-    margin: 0 10px;
+.tabs select:focus {
+    outline: none;
+    background-color: #45a049;
 }
 
-.tab-content.active {
-    display: block;
+.tabs select::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid white;
+    transition: all 0.3s ease;
+}
+
+.tabs select:hover::after {
+    border-top-color: #fff;
+}
+
+.tabs select:focus::after {
+    border-top-color: #fff;
 }

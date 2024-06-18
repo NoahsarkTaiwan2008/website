@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="buriki-no-dance.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.css" integrity="sha512-U9Y1sGB3sLIpZm3ePcrKbXVhXlnQNcuwGQJ2WjPjnp6XHqVTdgIlbaDzJXJIAuCTp3y22t+nhI4B88F/5ldjFA==" crossorigin="anonymous" />
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
         <link rel='icon' href='../../images/icon.svg'>
     </head>
     <body>
@@ -41,14 +42,17 @@
             </div>
         </div>
 
-        <main>
+        <main id="app">
             <h1>ブリキノダンス</h1>
             <div class="separator"></div>
             <div class="tabs">
-                <button class="tab-button active" data-tab="original">原文</button>
-                <button class="tab-button" data-tab="translation">翻譯</button>
+                <select v-model="selectedLanguage" class="language-select">
+                    <option value="original">原文</option>
+                    <option value="zh_tw">繁體中文</option>
+                    <option value="zh_cn">簡體中文</option>
+                </select>            
             </div>
-            <div class="tab-content active" id="original">
+            <div v-if="selectedLanguage === 'original'" class="tab-content active">
                 <div class="lyrics">
                     <p>
                         さあ 憐れんで 血統書 持ち寄って反教典<br>
@@ -129,7 +133,7 @@
                     </p>
                 </div>
             </div>
-            <div class="tab-content" id="translation">
+            <div v-if="selectedLanguage === 'zh_tw'" class="tab-content">
                 <div class="lyrics">
                     <p>
                         啊　那令人憐惜的　血統證明<br>
