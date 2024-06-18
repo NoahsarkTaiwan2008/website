@@ -184,6 +184,10 @@ main h1 {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.language-select:hover {
+    background-color: #367d39;
+}
+
 .tabs select:focus {
     outline: none;
     background-color: #45a049;
