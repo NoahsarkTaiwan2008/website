@@ -8,9 +8,14 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            margin-bottom: 20px;
         }
         table {
-            width: 60%;
+            width: 80%;
             margin: 0 auto;
             border-collapse: collapse;
             text-align: center;
@@ -35,6 +40,36 @@
         .white { background-color: white; color: black; }
         .gold { background-color: gold; color: black; }
         .silver { background-color: silver; color: black; }
+
+        /* RWD 設定 */
+        @media (max-width: 768px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            thead tr {
+                display: none; /* 隱藏標題列 */
+            }
+            tbody tr {
+                margin-bottom: 15px;
+                border: 1px solid #333;
+                border-radius: 8px;
+                padding: 10px;
+            }
+            tbody td {
+                display: flex;
+                justify-content: space-between;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #ddd;
+            }
+            tbody td:last-child {
+                border-bottom: none;
+            }
+            tbody td:before {
+                content: attr(data-label);
+                font-weight: bold;
+            }
+        }
     </style>
 </head>
 <body>
@@ -52,88 +87,88 @@
         </thead>
         <tbody>
             <tr class="black">
-                <td>黑</td>
-                <td>0</td>
-                <td>0</td>
-                <td>1</td>
-                <td>-</td>
+                <td data-label="顏色">黑</td>
+                <td data-label="第一條">0</td>
+                <td data-label="第二條">0</td>
+                <td data-label="倍數">1</td>
+                <td data-label="誤差">-</td>
             </tr>
             <tr class="brown">
-                <td>棕</td>
-                <td>1</td>
-                <td>1</td>
-                <td>10</td>
-                <td>±1%</td>
+                <td data-label="顏色">棕</td>
+                <td data-label="第一條">1</td>
+                <td data-label="第二條">1</td>
+                <td data-label="倍數">10</td>
+                <td data-label="誤差">±1%</td>
             </tr>
             <tr class="red">
-                <td>紅</td>
-                <td>2</td>
-                <td>2</td>
-                <td>100</td>
-                <td>±2%</td>
+                <td data-label="顏色">紅</td>
+                <td data-label="第一條">2</td>
+                <td data-label="第二條">2</td>
+                <td data-label="倍數">100</td>
+                <td data-label="誤差">±2%</td>
             </tr>
             <tr class="orange">
-                <td>橙</td>
-                <td>3</td>
-                <td>3</td>
-                <td>1K</td>
-                <td>-</td>
+                <td data-label="顏色">橙</td>
+                <td data-label="第一條">3</td>
+                <td data-label="第二條">3</td>
+                <td data-label="倍數">1K</td>
+                <td data-label="誤差">-</td>
             </tr>
             <tr class="yellow">
-                <td>黃</td>
-                <td>4</td>
-                <td>4</td>
-                <td>10K</td>
-                <td>-</td>
+                <td data-label="顏色">黃</td>
+                <td data-label="第一條">4</td>
+                <td data-label="第二條">4</td>
+                <td data-label="倍數">10K</td>
+                <td data-label="誤差">-</td>
             </tr>
             <tr class="green">
-                <td>綠</td>
-                <td>5</td>
-                <td>5</td>
-                <td>100K</td>
-                <td>±0.5%</td>
+                <td data-label="顏色">綠</td>
+                <td data-label="第一條">5</td>
+                <td data-label="第二條">5</td>
+                <td data-label="倍數">100K</td>
+                <td data-label="誤差">±0.5%</td>
             </tr>
             <tr class="blue">
-                <td>藍</td>
-                <td>6</td>
-                <td>6</td>
-                <td>1M</td>
-                <td>±0.25%</td>
+                <td data-label="顏色">藍</td>
+                <td data-label="第一條">6</td>
+                <td data-label="第二條">6</td>
+                <td data-label="倍數">1M</td>
+                <td data-label="誤差">±0.25%</td>
             </tr>
             <tr class="violet">
-                <td>紫</td>
-                <td>7</td>
-                <td>7</td>
-                <td>10M</td>
-                <td>±0.1%</td>
+                <td data-label="顏色">紫</td>
+                <td data-label="第一條">7</td>
+                <td data-label="第二條">7</td>
+                <td data-label="倍數">10M</td>
+                <td data-label="誤差">±0.1%</td>
             </tr>
             <tr class="gray">
-                <td>灰</td>
-                <td>8</td>
-                <td>8</td>
-                <td>100M</td>
-                <td>±0.05%</td>
+                <td data-label="顏色">灰</td>
+                <td data-label="第一條">8</td>
+                <td data-label="第二條">8</td>
+                <td data-label="倍數">100M</td>
+                <td data-label="誤差">±0.05%</td>
             </tr>
             <tr class="white">
-                <td>白</td>
-                <td>9</td>
-                <td>9</td>
-                <td>1G</td>
-                <td>-</td>
+                <td data-label="顏色">白</td>
+                <td data-label="第一條">9</td>
+                <td data-label="第二條">9</td>
+                <td data-label="倍數">1G</td>
+                <td data-label="誤差">-</td>
             </tr>
             <tr class="gold">
-                <td>金</td>
-                <td>-</td>
-                <td>-</td>
-                <td>0.1</td>
-                <td>±5%</td>
+                <td data-label="顏色">金</td>
+                <td data-label="第一條">-</td>
+                <td data-label="第二條">-</td>
+                <td data-label="倍數">0.1</td>
+                <td data-label="誤差">±5%</td>
             </tr>
             <tr class="silver">
-                <td>銀</td>
-                <td>-</td>
-                <td>-</td>
-                <td>0.01</td>
-                <td>±10%</td>
+                <td data-label="顏色">銀</td>
+                <td data-label="第一條">-</td>
+                <td data-label="第二條">-</td>
+                <td data-label="倍數">0.01</td>
+                <td data-label="誤差">±10%</td>
             </tr>
         </tbody>
     </table>
