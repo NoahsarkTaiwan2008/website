@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>四色電阻色碼表</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th, td {
+            padding: 15px;
+            border: 1px solid #333;
+        }
+        th {
+            background-color: #444;
+            color: white;
+        }
+        .black { background-color: black; color: white; }
+        .brown { background-color: brown; color: white; }
+        .red { background-color: red; color: white; }
+        .orange { background-color: orange; color: black; }
+        .yellow { background-color: yellow; color: black; }
+        .green { background-color: green; color: white; }
+        .blue { background-color: blue; color: white; }
+        .violet { background-color: purple; color: white; }
+        .gray { background-color: gray; color: white; }
+        .white { background-color: white; color: black; }
+        .gold { background-color: gold; color: black; }
+        .silver { background-color: silver; color: black; }
+    </style>
+</head>
+<body>
+
+    <h1>四色電阻色碼表</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>顏色</th>
+                <th>第一條 (數字)</th>
+                <th>第二條 (數字)</th>
+                <th>第三條 (倍數)</th>
+                <th>第四條 (誤差)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="black">黑</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="brown">棕</td>
+                <td>1</td>
+                <td>1</td>
+                <td>10</td>
+                <td>±1%</td>
+            </tr>
+            <tr>
+                <td class="red">紅</td>
+                <td>2</td>
+                <td>2</td>
+                <td>100</td>
+                <td>±2%</td>
+            </tr>
+            <tr>
+                <td class="orange">橙</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1K</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="yellow">黃</td>
+                <td>4</td>
+                <td>4</td>
+                <td>10K</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="green">綠</td>
+                <td>5</td>
+                <td>5</td>
+                <td>100K</td>
+                <td>±0.5%</td>
+            </tr>
+            <tr>
+                <td class="blue">藍</td>
+                <td>6</td>
+                <td>6</td>
+                <td>1M</td>
+                <td>±0.25%</td>
+            </tr>
+            <tr>
+                <td class="violet">紫</td>
+                <td>7</td>
+                <td>7</td>
+                <td>10M</td>
+                <td>±0.1%</td>
+            </tr>
+            <tr>
+                <td class="gray">灰</td>
+                <td>8</td>
+                <td>8</td>
+                <td>100M</td>
+                <td>±0.05%</td>
+            </tr>
+            <tr>
+                <td class="white">白</td>
+                <td>9</td>
+                <td>9</td>
+                <td>1G</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td class="gold">金</td>
+                <td>-</td>
+                <td>-</td>
+                <td>0.1</td>
+                <td>±5%</td>
+            </tr>
+            <tr>
+                <td class="silver">銀</td>
+                <td>-</td>
+                <td>-</td>
+                <td>0.01</td>
+                <td>±10%</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
