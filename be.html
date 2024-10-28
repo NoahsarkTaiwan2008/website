@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本電學筆記</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>基本電學筆記</h1>
+    </header>
+
+    <main>
+        <!-- 等效電阻計算 -->
+        <section id="equivalent-resistance">
+            <h2>等效電阻計算</h2>
+            <p>並聯電阻等效電阻公式：1/R<sub>eq</sub> = 1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub></p>
+            <p>串聯電阻等效電阻公式：R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + ... + R<sub>n</sub></p>
+        </section>
+
+        <!-- 求電路總電阻 -->
+        <section id="total-resistance">
+            <h2>求電路總電阻</h2>
+            <p>輸入各個電阻值來計算總電阻。</p>
+            <input type="text" id="resistors" placeholder="輸入電阻值（用逗號分隔）">
+            <button onclick="calculateTotalResistance()">計算總電阻</button>
+            <p id="result-resistance"></p>
+        </section>
+
+        <!-- 電壓升降 -->
+        <section id="voltage-drop">
+            <h2>電壓升與電壓降</h2>
+            <p>在閉合迴路中，電壓升等於電壓降。使用基爾霍夫電壓定律（Kirchhoff's Voltage Law）進行計算。</p>
+        </section>
+
+        <!-- 分壓原理 -->
+        <section id="voltage-division">
+            <h2>分壓原理</h2>
+            <p>分壓原理應用於串聯電阻。公式：V<sub>x</sub> = (R<sub>x</sub> / R<sub>total</sub>) * V<sub>total</sub></p>
+        </section>
+
+        <!-- 消耗功率 -->
+        <section id="power-consumption">
+            <h2>消耗功率</h2>
+            <p>電功率公式：P = V * I 或 P = I<sup>2</sup> * R 或 P = V<sup>2</sup> / R</p>
+            <input type="number" id="voltage" placeholder="電壓 (V)">
+            <input type="number" id="current" placeholder="電流 (I)">
+            <button onclick="calculatePower()">計算功率</button>
+            <p id="result-power"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 基本電學筆記</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
