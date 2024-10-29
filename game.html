@@ -86,6 +86,7 @@
             margin-top: 20px;
             text-decoration: none;
             color: #007bff;
+            cursor: pointer;
         }
 
         .restart-link:hover {
@@ -103,41 +104,50 @@
 <body>
     <div class="container">
         <h1>猜數字遊戲</h1>
-        <?php
-            session_start();
+        <p id="message">遊戲開始！我想了一個 1 到 100 之間的數字，試著猜猜看！</p>
 
-            // 初始化遊戲
-            if (!isset($_SESSION['target'])) {
-                $_SESSION['target'] = rand(1, 100);
-                $_SESSION['attempts'] = 0;
-                echo "<p>遊戲開始！我想了一個 1 到 100 之間的數字，試著猜猜看！</p>";
-            }
-
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $guess = intval($_POST['guess']);
-                $_SESSION['attempts']++;
-
-                if ($guess > $_SESSION['target']) {
-                    echo "<p>太高了！試試更小的數字。</p>";
-                } elseif ($guess < $_SESSION['target']) {
-                    echo "<p>太低了！試試更大的數字。</p>";
-                } else {
-                    echo "<p>恭喜你！猜對了！</p>";
-                    echo "<p>你用了 <span class='attempts'>" . $_SESSION['attempts'] . "</span> 次猜對。</p>";
-                    session_unset();  // 清除遊戲數據
-                    echo "<a class='restart-link' href='guess_number_game.php'>再玩一次</a>";
-                    exit;
-                }
-            }
-        ?>
-
-        <form method="post" action="">
+        <form onsubmit="return guessNumber()">
             <label for="guess">輸入你的猜測：</label>
-            <input type="number" name="guess" id="guess" required min="1" max="100">
+            <input type="number" id="guess" required min="1" max="100">
             <button type="submit">猜測</button>
         </form>
 
-        <p class="attempts">目前猜測次數：<?php echo $_SESSION['attempts']; ?></p>
+        <p class="attempts">目前猜測次數：<span id="attempts">0</span></p>
+        <span class="restart-link" onclick="restartGame()">再玩一次</span>
     </div>
+
+    <script>
+        // 遊戲初始設置
+        let targetNumber = Math.floor(Math.random() * 100) + 1;
+        let attempts = 0;
+
+        function guessNumber() {
+            const guess = parseInt(document.getElementById("guess").value);
+            attempts++;
+            document.getElementById("attempts").innerText = attempts;
+
+            // 判斷猜測結果
+            if (guess > targetNumber) {
+                document.getElementById("message").innerText = "太高了！試試更小的數字。";
+            } else if (guess < targetNumber) {
+                document.getElementById("message").innerText = "太低了！試試更大的數字。";
+            } else {
+                document.getElementById("message").innerText = `恭喜你！猜對了！你用了 ${attempts} 次猜對。`;
+                document.querySelector(".restart-link").style.display = "block";
+            }
+            
+            document.getElementById("guess").value = "";
+            return false; // 防止表單提交刷新頁面
+        }
+
+        // 重置遊戲
+        function restartGame() {
+            targetNumber = Math.floor(Math.random() * 100) + 1;
+            attempts = 0;
+            document.getElementById("message").innerText = "遊戲開始！我想了一個 1 到 100 之間的數字，試著猜猜看！";
+            document.getElementById("attempts").innerText = attempts;
+            document.querySelector(".restart-link").style.display = "none";
+        }
+    </script>
 </body>
 </html>
